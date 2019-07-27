@@ -1,19 +1,12 @@
-package creational.prototype;
+package creational.prototype.impl;
 
-import creational.prototype.impl.Age;
-import creational.prototype.impl.Student;
+import org.junit.Test;
 
-/**
- * @Author MCC
- * @Create 2019/7/27 17:06
- * 浅复制 Java中针对基本数据类型的成员变量，在浅复制的时候是完全复制一份给新对象。针对引用数据类型的变量而是直接拷贝引用，
- * 这样两个对象其实操作的是同一个对象。
- * 深复制
- * 深复制就是相对浅复制而言，针对引用类型的属性进行完全的拷贝，而不仅仅只是将引用地址进行复制。
- * 完成深复制一般有两种方式：一种是在复写clone方法的时候，调用引用对象的clone方法，另一种是利用序列化操作完成
- */
-public class PrototypePatternDemo {
-    public static void main(String[] args) {
+import static org.junit.Assert.*;
+
+public class StudentTest {
+    @Test
+    public void cloneTest() throws Exception {
         Age a = new Age(20);
         Student stu1 = new Student("TestMan", a, 175);
         System.out.println(stu1.toString());
@@ -33,4 +26,5 @@ public class PrototypePatternDemo {
         System.out.println(stu2.toString());
 
     }
+
 }

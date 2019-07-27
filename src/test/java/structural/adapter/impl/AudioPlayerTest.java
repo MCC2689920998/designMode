@@ -1,13 +1,13 @@
-package structural.adapter;
+package structural.adapter.impl;
 
-import structural.adapter.impl.AudioPlayer;
+import org.junit.Test;
 
-/**
- * @Author MCC
- * @Create 2019/7/27 18:06
- */
-public class AdapterPatternDemo {
-    public static void main(String[] args) {
+import static org.junit.Assert.*;
+
+public class AudioPlayerTest {
+
+    @Test
+    public void play() throws Exception {
         AudioPlayer audioPlayer = new AudioPlayer();
         audioPlayer.play("mp3", "beyond the horizon.mp3");
         audioPlayer.play("mp4", "alone.mp4");

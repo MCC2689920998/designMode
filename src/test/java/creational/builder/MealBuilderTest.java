@@ -1,11 +1,13 @@
 package creational.builder;
 
-/**
- * @Author MCC
- * @Create 2019/7/27 16:25
- */
-public class BuilderPatternDemo {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class MealBuilderTest {
+    @Test
+    public void prepareNonVegMeal() throws Exception {
+
         MealBuilder mealBuilder = new MealBuilder();
 
         Meal vegMeal = mealBuilder.prepareVegMeal();
@@ -17,5 +19,8 @@ public class BuilderPatternDemo {
         System.out.println("\n\nNon-Veg Meal");
         nonVegMeal.showItems();
         System.out.println("Total Cost: " + nonVegMeal.getCost());
+
+
     }
+
 }
