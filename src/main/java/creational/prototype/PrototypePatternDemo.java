@@ -1,7 +1,7 @@
-package creational.Prototype;
+package creational.prototype;
 
-import creational.Prototype.impl.Age;
-import creational.Prototype.impl.Student;
+import creational.prototype.impl.Age;
+import creational.prototype.impl.Student;
 
 /**
  * @Author MCC

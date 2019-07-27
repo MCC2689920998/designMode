@@ -1,4 +1,4 @@
-package creational.Prototype.impl;
+package creational.prototype.impl;
 
 import lombok.Data;
 
