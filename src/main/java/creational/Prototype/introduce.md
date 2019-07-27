@@ -41,4 +41,4 @@
 浅拷贝实现 Cloneable，重写，深拷贝是通过实现 Serializable 读取二进制流。
 
 #### 具体实现
-![avatar](https://www.runoob.com/wp-content/uploads/2014/08/prototype_pattern_uml_diagram.jpg)
+![avatar]()
