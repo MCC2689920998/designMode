@@ -12,17 +12,18 @@ import creational.factory.Shape;
 public class ColorFactory extends AbstractFactory {
     @Override
     public Color getColor(String colorType) {
-        if(colorType == null){
+        if (colorType == null) {
             return null;
         }
-        if("RED".equalsIgnoreCase(colorType)){
+        if ("RED".equalsIgnoreCase(colorType)) {
             return new Red();
-        } else if("GREEN".equalsIgnoreCase(colorType)){
+        } else if ("GREEN".equalsIgnoreCase(colorType)) {
             return new Green();
-        } else if("BLUE".equalsIgnoreCase(colorType)){
+        } else if ("BLUE".equalsIgnoreCase(colorType)) {
             return new Blue();
         }
-        return null;    }
+        return null;
+    }
 
     @Override
     public Shape getShape(String shapeType) {
