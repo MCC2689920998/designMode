@@ -17,6 +17,9 @@ package creational.singleton;
 public enum EnumSingleton {
     INSTANCE;
 
+    private EnumSingleton() {
+    }
+
     public EnumSingleton getInstance6() {
         return INSTANCE;
     }
