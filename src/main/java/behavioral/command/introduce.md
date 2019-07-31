@@ -31,5 +31,6 @@
 **注意事项**：
 1. 系统需要支持命令的撤销(Undo)操作和恢复(Redo)操作，也可以考虑使用命令模式，见命令模式的扩展
 
+
 #### 具体实现
 ![avatar](https://www.runoob.com/wp-content/uploads/2014/08/command_pattern_uml_diagram.jpg)
